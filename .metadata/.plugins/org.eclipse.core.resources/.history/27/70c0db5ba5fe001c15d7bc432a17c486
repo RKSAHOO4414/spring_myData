@@ -1,0 +1,19 @@
+package com.my.demo;
+
+import java.util.List;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+import com.my.demo.model.Alien;
+
+@Aspect
+@Component
+public class LoggingAspect {
+	
+	@Before("execution(public * List<Alien> com.my.demo.AlienController.getAliens())")
+	public void log() {
+		System.out.println("getAliens method called");
+	}
+}

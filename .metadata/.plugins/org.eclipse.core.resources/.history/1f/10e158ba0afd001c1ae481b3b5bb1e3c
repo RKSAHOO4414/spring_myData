@@ -1,0 +1,23 @@
+package com.my.springmvc.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.my.springmvc.model.Alien;
+
+public class AlienDao {
+	
+	private SessionFactory sessionFactory;
+	
+	public List<Alien> getAliens(){
+		Session session = sessionFactory.getCurrentSession();
+		session.createQuery("from Alien", Alien.class).list();
+		
+		return aliens;
+	}
+	
+}
+
+

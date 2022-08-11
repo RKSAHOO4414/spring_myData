@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="springmvc"/>
+<aop-project name="SpringDemo"/>
+<aop-project name="springmvc2"/>
+<aop-project name="SpringDemo2"/>
+<aop-project name="SpringDemo3"/>
+<aop-project name="SpringDemo4"/>
+<aop-project name="SpringDemo5"/>
+<aop-project name="SpringDemo6"/>
+<aop-project name="SpringDemo7"/>
+<aop-project name="SpringDemo8"/>
+<aop-project name="SpringDemo9"/>
+</aop-reference-model>

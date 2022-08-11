@@ -1,0 +1,9 @@
+package com.my.SpringDemo;
+
+public class Alien {
+	
+	public void code() {
+		System.out.println("I am coeing...");
+	}
+	
+}

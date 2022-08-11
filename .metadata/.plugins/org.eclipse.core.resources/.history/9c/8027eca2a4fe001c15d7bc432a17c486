@@ -1,0 +1,10 @@
+package com.my.demo;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class LoggingAspect {
+	public void log() {
+		System.out.println("getAliens method called");
+	}
+}

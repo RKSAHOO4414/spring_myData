@@ -1,0 +1,16 @@
+package com.my.demo;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class AlienController {
+	
+	@GetMapping("getAliens")
+	public String getAliens(Model m) {
+		
+		
+		m.addAttribute("result", repo.findAll());
+		
+		return "showAliens";
+	}
+}

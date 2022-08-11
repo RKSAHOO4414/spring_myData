@@ -1,0 +1,11 @@
+package com.my.demo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.my.demo.model.Alien;
+
+public interface AlienRepo extends JpaRepository<Alien, Integer> {
+
+	Object findByAname(String aname);
+	
+}

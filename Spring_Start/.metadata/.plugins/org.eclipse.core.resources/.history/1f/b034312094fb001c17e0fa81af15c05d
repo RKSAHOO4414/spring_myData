@@ -1,0 +1,30 @@
+package com.my1.springMVCBoot;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+	
+	@RequestMapping("/")
+	public String home() {
+		System.out.println("Home Page Request");
+		return "index.jsp";
+	}
+	
+	@RequestMapping("add")
+	public String add(int i, int j) {
+		
+		
+		
+		int num3 = i + j;
+		
+		session.setAttribute("num3", num3);
+		
+		return "result.jsp";
+		//return "result.jsp?num3=" + num3;
+	}
+}
